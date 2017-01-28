@@ -82,7 +82,7 @@ h1 {
 }
 
 #serverResponse {
-    color:red;
+    color: red;
     position: absolute;
     top: 210px;
     left: 140px;
@@ -90,6 +90,23 @@ h1 {
     background-color: floralwhite;
     color: blue;
     padding-left: .8em;
+}
+
+
+#timer {
+    color: red;
+    position: absolute;
+    top: 250px;
+    left: 140px;
+    width: 200px;
+    background-color: floralwhite;
+    color: blue;
+    padding-left: .8em;
+
+
+
+
+
 
 }
 
