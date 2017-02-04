@@ -1,5 +1,6 @@
        function reset(){
             document.getElementById("serverResponse").innerText="";
+            document.getElementById("timer").innerText="";
             xmlHttp = new XMLHttpRequest();
             xmlHttp.onreadystatechange=callback;
             var url ="NumGenServlet"+"?requestRestartGame=1";
@@ -28,7 +29,7 @@
                  var jSonMessage = JSON.parse(xmlHttp.responseText);
                  var keyRestartGame=jSonMessage.keyRestartGame;
                  if (keyRestartGame != undefined && keyRestartGame.length > 0) {
-                     alert("Restart cu succes, jocul a reinceput!");
+                     alert("Restart successful, game restarted!");
                      document.getElementById("number").value="";
                      return;
 
@@ -36,7 +37,7 @@
 
                  var keyError = jSonMessage.keyError;
                  if (keyError != undefined && keyError.length > 0) {
-                     alert("Trebuie sa introduceti un numar valid!");
+                     alert("Insert a valid number!");
                      return;
                  }
                 var keySuccess = jSonMessage.keySuccess;
@@ -46,15 +47,17 @@
 
                  if(keySuccess=="false") {
                      if (keyHint == "higher")
-                         document.getElementById("serverResponse").innerHTML = "WRONG, Try a Higher one!";
+                         document.getElementById("serverResponse").innerHTML = "WRONG, Try a Higher nr!";
                      else if (keyHint == "lower")
-                         document.getElementById("serverResponse").innerHTML = "WRONG, Try a Lower one!";
+                         document.getElementById("serverResponse").innerHTML = "WRONG, Try a Lower nr!";
                  }
-                 else
+
+
+             else
                  if(keySuccess=="true")
                  {
-                     document.getElementById("serverResponse").innerHTML = "Congrats, you guessed the number " + document.getElementById("number").value + " after " + keyNrGuesses + " guesses.";
-                     document.getElementById("timer").innerHTML = "timpul este:"+ diffNew;
+                     document.getElementById("serverResponse").innerHTML = "Congrats, you guessed  number " + document.getElementById("number").value + " after " + keyNrGuesses + " tries.";
+                     document.getElementById("timer").innerHTML = "and"+ " " +  diffNew + "sec";
                  }
              }
          }

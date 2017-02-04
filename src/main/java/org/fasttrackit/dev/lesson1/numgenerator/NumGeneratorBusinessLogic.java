@@ -24,7 +24,7 @@ public class NumGeneratorBusinessLogic {
     private int numberOfGuesses;
     private int generatedNumber;
     private String hint;
-    private double diff;
+    public double diff;
     private  long startT;
 
 
@@ -79,7 +79,7 @@ public class NumGeneratorBusinessLogic {
            System.out.println("am ghicit la:"+stopT);
 
             diff = (stopT-startT)/1000.0;
-            System.out.println("diff e:" +diff);
+            System.out.println("timpul este:" +diff);
 
         } else if (guessNumber < generatedNumber) {
             hint = "higher";

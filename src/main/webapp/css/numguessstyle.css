@@ -1,135 +1,125 @@
-/* 
-didactic purposes
-Some items are intentionally not optimized or not coded in the right way
-FastTrackIT 2015,
-version 1.0
-*/
+/*!*body {*!*/
+    /*!*!*background-color: #bbae72;*!*!*/
+    /*!*font-family: Verdana, Helvetica, Arial, sans-serif;*!*/
+    /*!*line-height: 125%;*!*/
+    /*!*padding: 0;*!*/
+    /*!*margin: 0;*!*/
+    /*!*background-image: url("../img/guessnum.png");*!*/
+/*!*}*!*/
 
-body {
-    background-color:darkorange;
-    font-family: Verdana, Helvetica, Arial, sans-serif;
-    line-height: 125%;
-    padding: 0;
-    margin: 0;
-    background-image: url("../img/guessnum.jpg");
-}
+/*!*h1 {*!*/
+    /*!*color: #3f250d;*!*/
+    /*!*font-family: 'Lobster', cursive;*!*/
+    /*!*font-size: 30px;*!*/
+    /*!*font-weight: normal;*!*/
+    /*!*line-height: 48px;*!*/
+    /*!*margin: 0 0 18px;*!*/
+    /*!*text-shadow: 1px 0 0 #fff;*!*/
+    /*!*border-bottom: 1px solid darkorange;*!*/
+/*!*}*!*/
 
+/*!*h1:hover {*!*/
+    /*!*background-color: black;*!*/
+    /*!*color: darkorange;*!*/
+    /*!*border-width: 3px;*!*/
+/*!*}*!*/
 
-h1 {
-    font-size: large;
-    background-color: darkred;
-    color: white;
-    padding-top: 2em;
-    padding-bottom: .2em;
-    padding-left: .4em;
-    margin: 0;
-}
+/*#tagline p {*/
+    /*font-style: italic;*/
+    /*font-family: Georgia, Times, serif;*/
+    /*background-color: #bed8f3;*/
+    /*border-top: 3px solid #7da5d8;*/
+    /*border-bottom: 3px solid #7da5d8;*/
+    /*padding-top: .2em;*/
+    /*padding-bottom: .2em;*/
+    /*padding-left: .8em;*/
+    /*margin: 0;*/
+/*}*/
 
-#tagline p {
-    font-style: italic;
-    font-family: Georgia, Times, serif;
-    background-color: #bed8f3;
-    border-top: 3px solid #7da5d8;
-    border-bottom: 3px solid #7da5d8;
-    padding-top: .2em;
-    padding-bottom: .2em;
-    padding-left: .8em;
-    margin: 0;
-}
+/*!*#header {*!*/
+    /*!*position: absolute;*!*/
+    /*!*border-top: 3px solid darkorange;*!*/
+    /*!*width: 100%;*!*/
 
-#header {
-    position: absolute;
-    border-top: 3px solid   darkred;
-    width: 100%;
-
-}
-
-#navigation {
-    position: absolute;
-    top: 110px;
-    width: 110px;
-    height: 115px;
-    background-color: darkorange;
-    color:black;
-    padding-left: .8em;
-    background-color: rgba(255, 140, 0, 0.05);
-    border:3px solid darkred;
-
-
-}
+/*!*}*!*/
 
 #bodycontent {
     position: absolute;
-    left: 140px;
-    top: 120px;
-    padding-top:.4em;
-    padding-left:1em;
-    color: lightgrey;
+    left: 335px;
+    top: 250px;
+    padding-top: .4em;
+    padding-left: 1em;
+    color: black;
+
 }
 
-#postcontent {
-    position: absolute;
-    left: 360px;
-    top: 110px;
-    width: 120px;
-    height:115px;
-    background-color: rgba(255, 140, 0, 0.02);
-    color:black;
-    padding-left: .8em;
-    border:3px solid darkred;
+/*#navigation2 {*/
+    /*position: absolute;*/
+    /*left: 300px;*/
+    /*top: 350px;*/
+    /*width: 120px;*/
+    /*height: 115px;*/
+    /*color: white;*/
+    /*font-weight: bold;*/
+    /*font-size: 14px;*/
+    /*padding: 3px 10px;*/
+    /*background-color: #ff6600;*/
+    /*border-radius: 5px;*/
+    /*float: right;*/
+    /*font-family: ‘Courier New’, Courier, monospace;*/
 
-;
-}
+/*}*/
 
-#serverResponse {
-    color: red;
-    position: absolute;
-    top: 210px;
-    left: 140px;
-    width: 200px;
-    background-color: floralwhite;
-    color: blue;
-    padding-left: .8em;
-}
+/*#postcontent {*/
+    /*position: absolute;*/
+    /*left: 660px;*/
+    /*top: 350px;*/
+    /*width: 120px;*/
+    /*height: 115px;*/
+    /*color: black;*/
+    /*font-weight: bold;*/
+    /*font-size: 14px;*/
+    /*padding: 3px 10px;*/
+    /*background-color: #ff6600;*/
+    /*border-radius: 5px;*/
+    /*float: right;*/
+    /*font-family: ‘Courier New’, Courier, monospace;*/
+/*}*/
 
+/*!*}*!*/
+
+/*#serverResponse {*/
+    /*position: absolute;*/
+    /*top: 400px;*/
+    /*left: 455px;*/
+    /*width: 200px;*/
+    /*background-color: floralwhite;*/
+    /*color: black;*/
+    /*padding-left: .8em;*/
+/*}*/
 
 #timer {
-    color: red;
     position: absolute;
-    top: 250px;
-    left: 140px;
-    width: 200px;
-    background-color: floralwhite;
-    color: blue;
+    top: 475px;
+    background-color: #4c813e;
+    left: 485px;
+    width: 100px;
+    color: black;
     padding-left: .8em;
 
-
-
-
-
-
 }
 
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 388px;
+    width: 100%;
+    color: #3c4b21;}
 
 
 
+/*#form {*/
 
+    /*color: #000;*/
 
-
-
-
-
-
-/* padding - between border and text -*/
-
-
-/* class selector*/
-.test {
-    color: #aa0044;
-}
-
-.highlight {
-    border-width: 10px;
-    border-style: inset;
-    border-color: #999999;
-}
+/*}*/

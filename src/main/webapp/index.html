@@ -1,66 +1,165 @@
+<!--old build >>>>old build>>>>>>old build>>>>>>old build>>>>>>old build>>>>>old build>>>>>>>old build>>>>>>old build-->
 
-<!-- didactic purposes
+<!--&lt;!&ndash; didactic purposes-->
 
-Some items are intentionally not optimized or not coded in the right way
+<!--Some items are intentionally not optimized or not coded in the right way-->
 
-FastTrackIT 2015
+<!--FastTrackIT 2015-->
 
--->
+<!--&ndash;&gt;-->
 
 
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--<title>app name</title>-->
+<!--<meta charset="utf-8"/>-->
+<!--<link href="css/numguessstyle.css" rel="stylesheet" type="text/css"/>-->
+<!--<link rel="stylesheet" type="text/css" href="css/demo.css" />-->
+<!--<link rel="stylesheet" type="text/css" href="css/style.css" />-->
+
+<!--<script src="js/numguessjs.js"></script>-->
+
+<!--</head>-->
+
+
+<!--<body>-->
+
+
+<!--<div id="header">-->
+<!--<div id="sitebranding">-->
+<!--<h1>NumGuess 2017</h1>-->
+<!--</div>-->
+
+<!--</div>-->
+<!--<div id="navigation">-->
+
+<!--<a href="javascript:guessLink(1)">It could be 1</a></br>-->
+<!--<a href="javascript:guessLink(2)">It could be 2</a></br>-->
+<!--<a href="javascript:guessLink(3)">It could be 3</a></br>-->
+<!--<a href="javascript:guessLink(4)">It could be 4</a></br>-->
+<!--<a href="javascript:guessLink(5)">It could be 5</a></br>-->
+<!--</div>-->
+<!--<div id="bodycontent">-->
+<!--<div id="form">-->
+<!--<label for="number">Number:&nbsp;</label><input type="number" id="number" style="width:30px;"/>-->
+
+<!--</br></br>-->
+
+<!--<input type="button" id="guessButton" value="Guess now" onClick="guess()"/>-->
+<!--<input type="button" id="resetButton" value="Reset Game" onClick="reset()"/>-->
+<!--</div>-->
+
+<!--</div>-->
+
+<!--<div id="serverResponse"></div>-->
+
+<!--<div id="postcontent">-->
+<!--<a href="javascript:guessLink(6)">It could be 6</a></br>-->
+<!--<a href="javascript:guessLink(7)">It could be 7</a></br>-->
+<!--<a href="javascript:guessLink(8)">It could be 8</a></br>-->
+<!--<a href="javascript:guessLink(9)">It could be 9</a></br>-->
+<!--<a href="javascript:guessLink(10)">It could be 10</a></br>-->
+<!--</div>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!--NEW >>>>NEW >>>>>NEW>>>>>> NEW >>>>>> NEW >>>>>NEW >>>>NEW >>>>>NEW>>>>> NEW >>>>>>> NEW >>>>>>NEW >>>>> NEW>>>>>-->
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>app name</title>
-      <meta charset="utf-8"/>
-      <link href="css/numguessstyle.css" rel="stylesheet" type="text/css"/>
-
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="css/demo.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link href="css/numguessstyle.css" rel="stylesheet" type="text/css"/>
     <script src="js/numguessjs.js"></script>
 
-  </head>
+</head>
+<body>
+<!-- top bar -->
+<div class="codrops-top">
+    <a href="http://fasttrackit.org">
+        FastTrackIT.org
+    </a>
+
+    <div class="clr"></div>
+</div><!--/ top bar -->
+
+<!-- Home -->
+<div id="home" class="content">
+    <h2>Home</h2>
+<li style="color: #323f1c">Ceva text...</li>
+</div>
+
+<!-- /Home -->
+
+<!-- Numguess -->
+<div id="portfolio" class="panel">
+    <div class="content">
+        <h2>Guess the number!</h2>
+    </div>
+
+    <div id="bodycontent">
+        <div id="form2">
+            <label for="number">Your number(from 1 to 10):&nbsp;</label><input type="number" id="number"
+                                                                               style="left:30px;"/>
+
+            </br></br>
+
+            <input type="button" id="guessButton" value="Guess now" onClick="guess()"/>
+            <input type="button" id="resetButton" value="Reset Game" onClick="reset()"/>
+        </div>
+
+    </div>
+    <!--timer/server response-->
+    <div id="serverResponse"></div>
+    <div id="timer"></div>
+    <!--timer/server response-->
 
 
-  <body bgcolor="#ff8c00">
+</div>
+<!-- Numguess -->
 
+<!-- FruitGuess -->
+<div id="about" class="panel">
+    <div class="content">
+        <h2>Fruit Guess</h2>
+    </div>
+</div>
+<!-- /FruitGuess -->
 
-  <div id="header">
-      <div id="sitebranding">
-          <h1>FastTrackIT.org</h1>
-      </div>
-      <div id="tagline">
-          <p>Welcome to NumGuess 2016!</p>
-      </div>
-  </div>
-  <div id="navigation">
-      <a href="javascript:guessLink(1)">It could be 1</a></br>
-      <a href="javascript:guessLink(2)">It could be 2</a></br>
-      <a href="javascript:guessLink(3)">It could be 3</a></br>
-      <a href="javascript:guessLink(4)">It could be 4</a></br>
-      <a href="javascript:guessLink(5)">It could be 5</a></br>
-  </div>
-  <div id="bodycontent">
-      <div id="form">
-          <label for="number">Number:&nbsp;</label><input type="number" id="number" style="width:30px"/>
+<!-- Contact -->
+<div id="contact" class="panel">
+    <div class="content">
+        <h2>Contact</h2>
+        <form id="form">
+            <p><label>Your Name</label><input type="text"/></p>
+            <p><label>Your Email</label><input type="text"/></p>
+            <p><label>Your Message</label><textarea></textarea></p>
+        </form>
+    </div>
+</div>
+<!-- /Contact -->
 
-          </br></br>
+<!-- Header with Navigation -->
+<div id="header" class="h1">
+    <h1>Team Orange</h1>
+    <ul id="navigation">
+        <li><a id="link-home" href="#home">Home</a></li>
+        <li><a id="link-portfolio" href="#portfolio">Num Guess</a></li>
+        <li><a id="link-about" href="#about">Fruit Guess</a></li>
+        <li><a id="link-contact" href="#contact">Contact</a></li>
+    </ul>
 
-          <input type="button" id="guessButton" value="Guess now" onClick="guess()"/>
-          <input type="button" id="resetButton" value="Reset Game" onClick="reset()"/>
-      </div>
+</div>
 
-  </div>
+<div id="footer">
 
-  <div id="serverResponse"></div>
-  <div id="timer">time</div>
+    <footer>
+        <p>&copy; 2017 Flavius Petrariu. All rights reserve:).</p>
+    </footer>
 
+</div>
 
-  <div id="postcontent">
-      <a href="javascript:guessLink(6)">It could be 6</a></br>
-      <a href="javascript:guessLink(7)">It could be 7</a></br>
-      <a href="javascript:guessLink(8)">It could be 8</a></br>
-      <a href="javascript:guessLink(9)">It could be 9</a></br>
-      <a href="javascript:guessLink(10)">It could be 10</a></br>
-  </div>
-
-  </body>
+</body>
 </html>
